@@ -19,7 +19,6 @@ body {
   background-image: url(../assets/basketball_court.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 header {
@@ -48,7 +47,7 @@ main {
   color: var(--text-color);
   background-color: var(--card-color);
   width: 80%;
-  height: 300px;
+  min-height: 300px;
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -72,6 +71,10 @@ main {
 .question-bookmark:hover {
   fill: white;
   transition: all 0.5s;
+}
+
+.active-bookmark {
+  fill: white;
 }
 
 .question {
