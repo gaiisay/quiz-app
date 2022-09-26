@@ -25,6 +25,70 @@ header {
   height: 4em;
   color: white;
   background-color: cornflowerblue;
+  z-index: 10;
+}
+
+main {
+  margin: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+}
+
+.question-card {
+  background-color: sandybrown;
+  width: 80%;
+  height: 300px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.question-bookmark {
+  position: absolute;
+  right: 20px;
+  top: -15px;
+  width: 3em;
+  height: 3em;
+  /*   fill: black;
+ */
+}
+
+.question {
+  width: 50%;
+  text-align: center;
+}
+
+.answer {
+  margin-top: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  display: none;
+}
+
+.show-answer {
+  display: inline;
+}
+
+.answer-button {
+  cursor: pointer;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 4px 5px 3px;
+  padding: 15px;
+  transition: 0.5s all;
+}
+
+.answer-button:hover {
+  box-shadow: none;
+  transition: 0.5s all;
 }
 
 footer {
@@ -36,6 +100,7 @@ footer {
   align-items: center;
   justify-content: space-around;
   background-color: cornflowerblue;
+  z-index: 10;
 }
 
 footer a {
