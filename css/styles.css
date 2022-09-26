@@ -1,3 +1,10 @@
+:root {
+  --text-color: white;
+  --accent-color: #a5b1a2;
+  --background-color: #394337;
+  --card-color: #5b6659;
+}
+
 *,
 *::before,
 *::after {
@@ -6,13 +13,13 @@
   padding: 0;
 }
 
-/* html {
-  scroll-behavior: smooth;
-} */
-
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
     sans-serif;
+  background-image: url(../assets/basketball_court.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 header {
@@ -23,8 +30,8 @@ header {
   justify-content: center;
   align-items: center;
   height: 4em;
-  color: white;
-  background-color: cornflowerblue;
+  color: var(--text-color);
+  background-color: var(--background-color);
   z-index: 10;
 }
 
@@ -38,7 +45,8 @@ main {
 }
 
 .question-card {
-  background-color: sandybrown;
+  color: var(--text-color);
+  background-color: var(--card-color);
   width: 80%;
   height: 300px;
   padding: 50px;
@@ -57,11 +65,11 @@ main {
   top: -15px;
   width: 3em;
   height: 3em;
-  /*   fill: black;
- */
+  fill: none;
 }
 
 .question {
+  font-size: 1.2rem;
   width: 50%;
   text-align: center;
 }
@@ -79,9 +87,10 @@ main {
 
 .answer-button {
   cursor: pointer;
-  background-color: white;
+  color: var(--text-color);
+  background-color: var(--background-color);
   border-radius: 10px;
-  box-shadow: 4px 5px 3px;
+  box-shadow: 4px 5px 3px black;
   padding: 15px;
   transition: 0.5s all;
 }
@@ -98,9 +107,15 @@ footer {
   height: 4em;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  background-color: cornflowerblue;
+  background-color: var(--background-color);
   z-index: 10;
+}
+nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 footer a {
@@ -112,15 +127,15 @@ footer a {
 }
 
 footer a:hover {
-  background-color: rgb(89, 89, 89);
+  background-color: var(--accent-color);
 }
 
 .active {
-  border-bottom: 5px solid sandybrown;
+  border-bottom: 5px solid var(--accent-color);
 }
 
 footer svg {
-  color: white;
+  color: #edeeef;
   width: 2em;
   height: 2em;
 }
