@@ -60,12 +60,18 @@ main {
 }
 
 .question-bookmark {
+  color: white;
   position: absolute;
   right: 20px;
   top: -15px;
   width: 3em;
   height: 3em;
   fill: none;
+}
+
+.question-bookmark:hover {
+  fill: white;
+  transition: all 0.5s;
 }
 
 .question {
