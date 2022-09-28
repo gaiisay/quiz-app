@@ -38,11 +38,11 @@
 }
 
 input:checked + .slider {
-  background-color: var(--background-color);
+  background-color: var(--primary-color);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px var(--background-color);
+  box-shadow: 0 0 1px var(--primary-color);
 }
 
 input:checked + .slider:before {

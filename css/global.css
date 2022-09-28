@@ -9,21 +9,19 @@
 :root {
   --text-color: white;
   --accent-color: #a5b1a2;
-  --background-color: #394337;
-  --card-color: #5b6659;
+  --primary-color: #394337;
+  --secondary-color: #5b6659;
 }
 
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
     sans-serif;
-  background-image: url(../assets/basketball_court.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: var(--secondary-color);
   color: var(--text-color);
 }
 
 main {
-  margin: 100px 50px;
+  margin: 100px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

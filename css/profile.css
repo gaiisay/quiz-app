@@ -6,25 +6,25 @@
 
 body {
   background-image: none;
-  background-color: var(--card-color);
+  background-color: var(--secondary-color);
 }
 
 .hero {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  gap: 20px;
   font-size: 2rem;
 }
 
 .profile-picture {
-  background-image: url(../assets/profile_picture.jpeg);
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  border-radius: 100%;
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .about-me {
@@ -42,9 +42,10 @@ body {
 }
 
 .dark-mode {
-  width: 70%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  margin-right: 70px;
 }

@@ -7,6 +7,6 @@ header {
   align-items: center;
   height: 4em;
   color: var(--text-color);
-  background-color: var(--background-color);
+  background-color: var(--primary-color);
   z-index: 10;
 }
