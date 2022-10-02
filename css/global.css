@@ -13,6 +13,13 @@
   --secondary-color: #fff8f0;
 }
 
+.dark-mode {
+  --text-color: white;
+  --accent-color: #dfe0df;
+  --primary-color: black;
+  --secondary-color: #006e5f;
+}
+
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
     sans-serif;
