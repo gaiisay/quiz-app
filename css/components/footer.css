@@ -34,7 +34,7 @@ footer a:hover {
 }
 
 footer svg {
-  color: #edeeef;
+  color: var(--text-color);
   width: 2em;
   height: 2em;
 }

@@ -7,10 +7,17 @@
 }
 
 :root {
+  --text-color: black;
+  --accent-color: #dfe0df;
+  --primary-color: #ff980e;
+  --secondary-color: #fff8f0;
+}
+
+.dark-mode {
   --text-color: white;
-  --accent-color: #a5b1a2;
-  --primary-color: #394337;
-  --secondary-color: #5b6659;
+  --accent-color: #dfe0df;
+  --primary-color: black;
+  --secondary-color: #006e5f;
 }
 
 body {

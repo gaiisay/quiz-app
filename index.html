@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/index.js" defer></script>
     <title>Quiz App</title>
   </head>
   <body>
@@ -32,8 +33,10 @@
         <p class="question-card__question">
           Wie viele Spieler stehen bei einem Basketball Siel pro Team auf dem Feld
         </p>
-        <button type="button" class="question-card__button">Show Anwser</button>
-        <p class="question-card__answer">5</p>
+        <button type="button" class="question-card__button" data-js="show-answer-button">
+          Show Answer
+        </button>
+        <p class="question-card__answer" data-js="answer">5</p>
         <ul class="question-tags">
           <li class="question-tags__item">#Basketball</li>
         </ul>
@@ -56,8 +59,10 @@
           </svg>
         </a>
         <p class="question-card__question">Kann ein Basketball Spiel unentschieden ausgehen?</p>
-        <button type="button" class="question-card__button">Show Anwser</button>
-        <p class="question-card__answer">Nein</p>
+        <button type="button" class="question-card__button" data-js="show-answer-button">
+          Show Answer
+        </button>
+        <p class="question-card__answer" data-js="answer" data-js="answer">Nein</p>
         <ul class="question-tags">
           <li class="question-tags__item">#Basketball</li>
         </ul>
@@ -80,8 +85,10 @@
           </svg>
         </a>
         <p class="question-card__question">Wieviele Punkte gibt ein Freiwurf</p>
-        <button type="button" class="question-card__button">Show Anwser</button>
-        <p class="question-card__answer">1</p>
+        <button type="button" class="question-card__button" data-js="show-answer-button">
+          Show Answer
+        </button>
+        <p class="question-card__answer" data-js="answer">1</p>
         <ul class="question-tags">
           <li class="question-tags__item">#Basketball</li>
         </ul>
@@ -90,7 +97,7 @@
         <a aria-label="Bookmark" href="#" target="_self">
           <svg
             aria-hidden="true"
-            class="question-bookmark"
+            class="question-card__bookmark"
             viewBox="0 0 24 24"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
@@ -104,8 +111,10 @@
           </svg>
         </a>
         <p class="question-card__question">Wie hoch hängt der Basketball Korb?</p>
-        <button type="button" class="question-card__button">Show Anwser</button>
-        <p class="question-card__answer">3.05m</p>
+        <button type="button" class="question-card__button" data-js="show-answer-button">
+          Show Answer
+        </button>
+        <p class="question-card__answer" data-js="answer">3.05m</p>
         <ul class="question-tags">
           <li class="question-tags__item">#Basketball</li>
         </ul>
