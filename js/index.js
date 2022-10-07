@@ -4,7 +4,16 @@ const bookmarks = document.querySelectorAll('[data-js="bookmark"]');
 
 for (let count = 0; count < answer.length; count++) {
   showAnswerButton.item(count).addEventListener("click", () => {
-    answer.item(count).classList.toggle("answer--active");
+    const currentAnswer = answer.item(count);
+    const currentButton = showAnswerButton.item(count);
+
+    currentAnswer.classList.toggle("answer--active");
+
+    if (currentButton.textContent === "Hide Answer") {
+      currentButton.textContent = "Show Answer";
+    } else {
+      currentButton.textContent = "Hide Answer";
+    }
   });
 }
 console.log(bookmarks);
