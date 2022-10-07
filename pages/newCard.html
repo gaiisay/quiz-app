@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <script src="./js/index.js" defer></script>
     <title>Quiz App</title>
   </head>
@@ -13,117 +13,19 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="question-card">
-        <button
-          type="button"
-          class="question-card__bookmark"
-          aria-label="Bookmark"
-          data-js="bookmark"
-        >
-          <svg
-            aria-hidden="true"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M6 2H18C18.5304 2 19.039 2.21074 19.4141 2.58582C19.7891 2.96089 20 3.46957 20 4V21C19.9992 21.1978 19.9397 21.3909 19.8291 21.5549C19.7185 21.7189 19.5617 21.8463 19.3787 21.9213C19.1956 21.9962 18.9946 22.0152 18.8008 21.9758C18.607 21.9364 18.4291 21.8405 18.2898 21.7001L12 17.41L5.70996 21.7001C5.57069 21.8405 5.39279 21.9364 5.19897 21.9758C5.00516 22.0152 4.80413 21.9962 4.62109 21.9213C4.43806 21.8463 4.28122 21.7189 4.17065 21.5549C4.06009 21.3909 4.00083 21.1978 4 21V4C4 3.46957 4.21062 2.96089 4.58569 2.58582C4.96077 2.21074 5.46957 2 6 2Z"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
-        <p class="question-card__question">
-          Wie viele Spieler stehen bei einem Basketball Siel pro Team auf dem Feld
-        </p>
-        <button type="button" class="question-card__button" data-js="show-answer-button">
-          Show Answer
-        </button>
-        <p class="question-card__answer" data-js="answer">5</p>
-        <ul class="question-tags">
-          <li class="question-tags__item">#Basketball</li>
-        </ul>
+      <section class="form">
+        <form action="submit">
+          <label for="input-question">Your question</label>
+          <textarea name="question" id="input-question" cols="30" rows="10"></textarea>
+        </form>
       </section>
-      <section class="question-card">
-        <button class="question-card__bookmark" aria-label="Bookmark" data-js="bookmark">
-          <svg
-            aria-hidden="true"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M6 2H18C18.5304 2 19.039 2.21074 19.4141 2.58582C19.7891 2.96089 20 3.46957 20 4V21C19.9992 21.1978 19.9397 21.3909 19.8291 21.5549C19.7185 21.7189 19.5617 21.8463 19.3787 21.9213C19.1956 21.9962 18.9946 22.0152 18.8008 21.9758C18.607 21.9364 18.4291 21.8405 18.2898 21.7001L12 17.41L5.70996 21.7001C5.57069 21.8405 5.39279 21.9364 5.19897 21.9758C5.00516 22.0152 4.80413 21.9962 4.62109 21.9213C4.43806 21.8463 4.28122 21.7189 4.17065 21.5549C4.06009 21.3909 4.00083 21.1978 4 21V4C4 3.46957 4.21062 2.96089 4.58569 2.58582C4.96077 2.21074 5.46957 2 6 2Z"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
-        <p class="question-card__question">Kann ein Basketball Spiel unentschieden ausgehen?</p>
-        <button type="button" class="question-card__button" data-js="show-answer-button">
-          Show Answer
-        </button>
-        <p class="question-card__answer" data-js="answer" data-js="answer">Nein</p>
-        <ul class="question-tags">
-          <li class="question-tags__item">#Basketball</li>
-        </ul>
-      </section>
-      <section class="question-card">
-        <button class="question-card__bookmark" aria-label="Bookmark" data-js="bookmark">
-          <svg
-            aria-hidden="true"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M6 2H18C18.5304 2 19.039 2.21074 19.4141 2.58582C19.7891 2.96089 20 3.46957 20 4V21C19.9992 21.1978 19.9397 21.3909 19.8291 21.5549C19.7185 21.7189 19.5617 21.8463 19.3787 21.9213C19.1956 21.9962 18.9946 22.0152 18.8008 21.9758C18.607 21.9364 18.4291 21.8405 18.2898 21.7001L12 17.41L5.70996 21.7001C5.57069 21.8405 5.39279 21.9364 5.19897 21.9758C5.00516 22.0152 4.80413 21.9962 4.62109 21.9213C4.43806 21.8463 4.28122 21.7189 4.17065 21.5549C4.06009 21.3909 4.00083 21.1978 4 21V4C4 3.46957 4.21062 2.96089 4.58569 2.58582C4.96077 2.21074 5.46957 2 6 2Z"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
-        <p class="question-card__question">Wieviele Punkte gibt ein Freiwurf</p>
-        <button type="button" class="question-card__button" data-js="show-answer-button">
-          Show Answer
-        </button>
-        <p class="question-card__answer" data-js="answer">1</p>
-        <ul class="question-tags">
-          <li class="question-tags__item">#Basketball</li>
-        </ul>
-      </section>
-      <section class="question-card">
-        <button class="question-card__bookmark" aria-label="Bookmark" data-js="bookmark">
-          <svg
-            aria-hidden="true"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M6 2H18C18.5304 2 19.039 2.21074 19.4141 2.58582C19.7891 2.96089 20 3.46957 20 4V21C19.9992 21.1978 19.9397 21.3909 19.8291 21.5549C19.7185 21.7189 19.5617 21.8463 19.3787 21.9213C19.1956 21.9962 18.9946 22.0152 18.8008 21.9758C18.607 21.9364 18.4291 21.8405 18.2898 21.7001L12 17.41L5.70996 21.7001C5.57069 21.8405 5.39279 21.9364 5.19897 21.9758C5.00516 22.0152 4.80413 21.9962 4.62109 21.9213C4.43806 21.8463 4.28122 21.7189 4.17065 21.5549C4.06009 21.3909 4.00083 21.1978 4 21V4C4 3.46957 4.21062 2.96089 4.58569 2.58582C4.96077 2.21074 5.46957 2 6 2Z"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
-        <p class="question-card__question">Wie hoch hängt der Basketball Korb?</p>
-        <button type="button" class="question-card__button" data-js="show-answer-button">
-          Show Answer
-        </button>
-        <p class="question-card__answer" data-js="answer">3.05m</p>
-        <ul class="question-tags">
-          <li class="question-tags__item">#Basketball</li>
-        </ul>
+      <section class="new-cards">
+        <ul class="card-list"></ul>
       </section>
     </main>
     <footer>
       <nav>
-        <a aria-label="Link to Home Page" class="active" href="index.html" target="_self">
+        <a aria-label="Link to Home Page" href="index.html" target="_self">
           <svg
             aria-hidden="true"
             class="home-button"
@@ -145,7 +47,7 @@
             />
           </svg>
         </a>
-        <a aria-label="Link to New Card Page" href="./pages/newCard.html" target="_self">
+        <a aria-label="Link to New Card Page" class="active" href="newCard.html" target="_self">
           <svg
             width="114"
             height="151"
