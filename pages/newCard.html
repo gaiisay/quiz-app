@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" />
-    <script src="./js/index.js" defer></script>
+    <script src="../js/index.js" defer></script>
     <title>Quiz App</title>
   </head>
   <body>
@@ -14,7 +14,7 @@
     </header>
     <main>
       <section class="form-section">
-        <form action="submit" class="form">
+        <form action="submit" class="form" data-js="form">
           <label for="input-question">Your question:</label>
           <textarea
             name="question"
@@ -31,7 +31,7 @@
         </form>
       </section>
       <section class="new-cards">
-        <ul class="card-list"></ul>
+        <ul class="card-list" data-js="card-list"></ul>
       </section>
     </main>
     <footer>
