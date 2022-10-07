@@ -1,0 +1,10 @@
+.form {
+  display: grid;
+  gap: 10px;
+}
+
+.form__button {
+  width: 50%;
+  height: 2rem;
+  justify-self: center;
+}

@@ -13,10 +13,21 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="form">
-        <form action="submit">
-          <label for="input-question">Your question</label>
-          <textarea name="question" id="input-question" cols="30" rows="10"></textarea>
+      <section class="form-section">
+        <form action="submit" class="form">
+          <label for="input-question">Your question:</label>
+          <textarea
+            name="question"
+            id="input-question"
+            cols="60"
+            rows="10"
+            maxlength="200"
+          ></textarea>
+          <label for="input-answer">Your answer:</label>
+          <textarea name="answer" id="input-answer" cols="60" rows="10" maxlength="200"></textarea>
+          <label for="input-tag">Tag:</label>
+          <input type="text" name="tag" id="input-tag" />
+          <button class="form__button" type="submit">Create new questions</button>
         </form>
       </section>
       <section class="new-cards">
@@ -25,7 +36,7 @@
     </main>
     <footer>
       <nav>
-        <a aria-label="Link to Home Page" href="index.html" target="_self">
+        <a aria-label="Link to Home Page" href="../index.html" target="_self">
           <svg
             aria-hidden="true"
             class="home-button"
@@ -47,7 +58,7 @@
             />
           </svg>
         </a>
-        <a aria-label="Link to New Card Page" class="active" href="newCard.html" target="_self">
+        <a aria-label="Link to New Card Page" class="active" href="./newCard.html" target="_self">
           <svg
             width="114"
             height="151"
@@ -71,7 +82,7 @@
             />
           </svg>
         </a>
-        <a aria-label="Link to Bookmarks Page" href="./pages/bookmarks.html" target="_self">
+        <a aria-label="Link to Bookmarks Page" href="./bookmarks.html" target="_self">
           <svg
             aria-hidden="true"
             viewBox="0 0 24 24"
@@ -86,7 +97,7 @@
             />
           </svg>
         </a>
-        <a aria-label="Link to Profile Page" href="./pages/profile.html" target="_self">
+        <a aria-label="Link to Profile Page" href="./profile.html" target="_self">
           <svg
             aria-hidden="true"
             class="profile-button"
