@@ -15,21 +15,22 @@
 }
 
 .question-card__bookmark {
+  border: none;
+  background: none;
+  cursor: pointer;
   color: var(--text-color);
   position: absolute;
   right: 20px;
   top: -15px;
   width: 3em;
   height: 3em;
+}
+
+.question-card__bookmark svg {
   fill: none;
 }
 
-.question-card__bookmark:hover {
-  fill: var(--text-color);
-  transition: all 0.5s;
-}
-
-.bookmark--active {
+.bookmark--active svg {
   fill: var(--text-color);
 }
 

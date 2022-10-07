@@ -14,10 +14,14 @@
     </header>
     <main>
       <section class="question-card">
-        <a aria-label="Bookmark" href="#" target="_self">
+        <button
+          type="button"
+          class="question-card__bookmark"
+          aria-label="Bookmark"
+          data-js="bookmark"
+        >
           <svg
             aria-hidden="true"
-            class="question-card__bookmark"
             viewBox="0 0 24 24"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +33,7 @@
               stroke-linejoin="round"
             />
           </svg>
-        </a>
+        </button>
         <p class="question-card__question">
           Wie viele Spieler stehen bei einem Basketball Siel pro Team auf dem Feld
         </p>
@@ -42,10 +46,9 @@
         </ul>
       </section>
       <section class="question-card">
-        <a aria-label="Bookmark" href="#" target="_self">
+        <button class="question-card__bookmark" aria-label="Bookmark" data-js="bookmark">
           <svg
             aria-hidden="true"
-            class="question-card__bookmark bookmark--active"
             viewBox="0 0 24 24"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +60,7 @@
               stroke-linejoin="round"
             />
           </svg>
-        </a>
+        </button>
         <p class="question-card__question">Kann ein Basketball Spiel unentschieden ausgehen?</p>
         <button type="button" class="question-card__button" data-js="show-answer-button">
           Show Answer
@@ -68,10 +71,9 @@
         </ul>
       </section>
       <section class="question-card">
-        <a aria-label="Bookmark" href="#" target="_self">
+        <button class="question-card__bookmark" aria-label="Bookmark" data-js="bookmark">
           <svg
             aria-hidden="true"
-            class="question-card__bookmark"
             viewBox="0 0 24 24"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
@@ -83,7 +85,7 @@
               stroke-linejoin="round"
             />
           </svg>
-        </a>
+        </button>
         <p class="question-card__question">Wieviele Punkte gibt ein Freiwurf</p>
         <button type="button" class="question-card__button" data-js="show-answer-button">
           Show Answer
@@ -94,10 +96,9 @@
         </ul>
       </section>
       <section class="question-card">
-        <a aria-label="Bookmark" href="#" target="_self">
+        <button class="question-card__bookmark" aria-label="Bookmark" data-js="bookmark">
           <svg
             aria-hidden="true"
-            class="question-card__bookmark"
             viewBox="0 0 24 24"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +110,7 @@
               stroke-linejoin="round"
             />
           </svg>
-        </a>
+        </button>
         <p class="question-card__question">Wie hoch hängt der Basketball Korb?</p>
         <button type="button" class="question-card__button" data-js="show-answer-button">
           Show Answer
