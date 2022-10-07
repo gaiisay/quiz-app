@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/profile.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <script src="../js/settings.js" defer></script>
 
     <title>Quiz App</title>
   </head>
   <body>
     <header>
-      <h1 class="title">Quiz App</h1>
+      <h1 class="title">Profile</h1>
     </header>
     <main>
       <section class="hero">
-        <img class="profile-picture" src="../assets/profile_picture.jpeg"></img>
+        <img class="profile-picture" src="../assets/profile_picture.jpeg" />
         <h2>Snoop Dog</h2>
       </section>
       <section class="about-me">
@@ -58,13 +58,12 @@
       </section>
       <section class="settings">
         <h2>Settings</h2>
-        <div class="dark-mode">
-          <p>Dark Mode</p>
-          <label class="switch">
-            <input type="checkbox" data-js="dark-mode-switch"/>
-            <span class="slider"></span>
+        <form class="profile__settings" aria-labelledby="title">
+          <input type="checkbox" id="switch-darkmode" class="profile__settings-darkmode-input" />
+          <label for="switch-darkmode" class="profile__settings-darkmode-label">
+            Toggle Darkmode
           </label>
-        </div>
+        </form>
       </section>
     </main>
     <footer>
