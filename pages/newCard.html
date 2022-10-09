@@ -5,70 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" />
-    <script src="../js/settings.js" defer></script>
-
+    <script src="../js/form.js" defer></script>
     <title>Quiz App</title>
   </head>
   <body>
     <header>
-      <h1 class="title">Profile</h1>
+      <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="hero">
-        <img class="profile-picture" src="../assets/profile_picture.jpeg" />
-        <h2>Snoop Dog</h2>
-      </section>
-      <section class="about-me">
-        <h2>About Me</h2>
-        <p>
-          Snoop Dogg (* 20. Oktober 1971 in Long Beach, Kalifornien; bürgerlich Calvin Cordozar
-          Broadus Jr.) ist ein US-amerikanischer Rapper und Schauspieler. Zu seiner Anfangszeit
-          nannte er sich Snoop Doggy Dogg.
-        </p>
-      </section>
-      <section class="stats">
-        <div class="created-questions">
-          <svg viewBox="0 0 106 106" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M105.899 52.9493C105.899 66.9923 100.32 80.4601 90.3901 90.3901C80.4601 100.32 66.9923 105.899 52.9493 105.899C38.9062 105.899 25.4384 100.32 15.5085 90.3901C5.57857 80.4601 0 66.9923 0 52.9493C0 38.9062 5.57857 25.4384 15.5085 15.5085C25.4384 5.57857 38.9062 0 52.9493 0C66.9923 0 80.4601 5.57857 90.3901 15.5085C100.32 25.4384 105.899 38.9062 105.899 52.9493ZM36.3761 39.9304C36.1628 39.9333 35.9511 39.8926 35.754 39.8109C35.5569 39.7291 35.3786 39.608 35.2299 39.455C35.0812 39.302 34.9653 39.1202 34.8892 38.9209C34.8132 38.7215 34.7786 38.5087 34.7877 38.2956C35.4098 27.0769 44.5899 23.1653 52.9824 23.1653C62.222 23.1653 70.6674 27.9969 70.6674 37.9911C70.6674 45.1393 66.4646 48.5412 62.4338 51.6057C57.5559 55.3055 55.749 56.6888 55.749 61.441V62.136C55.749 62.5748 55.5746 62.9957 55.2643 63.306C54.954 63.6163 54.5331 63.7906 54.0943 63.7906H48.7332C48.2989 63.7907 47.882 63.62 47.5724 63.3154C47.2629 63.0108 47.0855 62.5967 47.0785 62.1624L47.052 60.7262C46.8005 54.5907 50.3283 50.8114 54.7826 47.5749C58.6876 44.6362 61.1696 42.7036 61.1696 38.5007C61.1696 33.0403 57.0131 30.7701 52.4727 30.7701C47.1579 30.7701 44.1795 33.9339 43.5905 38.2757C43.4713 39.1825 42.7433 39.9304 41.8299 39.9304H36.3695H36.3761ZM51.7645 82.5744C47.8992 82.5744 45.0863 79.9666 45.0863 76.4389C45.0863 72.7854 47.8992 70.2173 51.7711 70.2173C55.8019 70.2173 58.5751 72.7854 58.5751 76.4389C58.5751 79.9666 55.7953 82.5744 51.7645 82.5744Z"
-              fill="currentColor"
-            />
-          </svg>
-          <p class="question-counter">23</p>
-        </div>
-        <div class="bookmarked-questions">
-          <svg
-            aria-hidden="true"
-            class="bookmark"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M6 2H18C18.5304 2 19.039 2.21074 19.4141 2.58582C19.7891 2.96089 20 3.46957 20 4V21C19.9992 21.1978 19.9397 21.3909 19.8291 21.5549C19.7185 21.7189 19.5617 21.8463 19.3787 21.9213C19.1956 21.9962 18.9946 22.0152 18.8008 21.9758C18.607 21.9364 18.4291 21.8405 18.2898 21.7001L12 17.41L5.70996 21.7001C5.57069 21.8405 5.39279 21.9364 5.19897 21.9758C5.00516 22.0152 4.80413 21.9962 4.62109 21.9213C4.43806 21.8463 4.28122 21.7189 4.17065 21.5549C4.06009 21.3909 4.00083 21.1978 4 21V4C4 3.46957 4.21062 2.96089 4.58569 2.58582C4.96077 2.21074 5.46957 2 6 2Z"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <p class="bookmark-counter">4</p>
-        </div>
-      </section>
-      <section class="settings">
-        <h2>Settings</h2>
-        <form class="profile__settings" aria-labelledby="title">
-          <input type="checkbox" id="switch-darkmode" class="profile__settings-darkmode-input" />
-          <label for="switch-darkmode" class="profile__settings-darkmode-label">
-            Toggle Darkmode
-          </label>
+      <section class="form-section">
+        <form action="submit" class="form" data-js="form">
+          <label for="input-question">Your question:</label>
+          <textarea
+            name="question"
+            id="input-question"
+            cols="60"
+            rows="10"
+            maxlength="200"
+          ></textarea>
+          <small class="form__character-count">
+            (<span data-js="amountLeft-question"></span> characters left)
+          </small>
+          <label for="input-answer">Your answer:</label>
+          <textarea name="answer" id="input-answer" cols="60" rows="10" maxlength="200"></textarea>
+          <small class="form__character-count">
+            (<span data-js="amountLeft-answer"></span> characters left)
+          </small>
+          <label for="input-tag">Tag:</label>
+          <input type="text" name="tag" id="input-tag" />
+          <button class="form__button" type="submit">Create new questions</button>
         </form>
       </section>
+      <div class="new-cards" data-js="card-list"></div>
     </main>
     <footer>
       <nav>
-        <a aria-label="Link to Home Page" class="" href="../index.html" target="_self">
+        <a aria-label="Link to Home Page" href="../index.html" target="_self">
           <svg
             aria-hidden="true"
             class="home-button"
@@ -90,7 +62,7 @@
             />
           </svg>
         </a>
-        <a aria-label="Link to New Card Page" href="./newCard.html" target="_self">
+        <a aria-label="Link to New Card Page" class="active" href="./newCard.html" target="_self">
           <svg
             width="114"
             height="151"
@@ -114,7 +86,7 @@
             />
           </svg>
         </a>
-        <a aria-label="Link to Bookmarks Page" class="" href="./bookmarks.html" target="_self">
+        <a aria-label="Link to Bookmarks Page" href="./bookmarks.html" target="_self">
           <svg
             aria-hidden="true"
             viewBox="0 0 24 24"
@@ -129,7 +101,7 @@
             />
           </svg>
         </a>
-        <a aria-label="Link to Profile Page" class="active" href="./profile.html" target="_self">
+        <a aria-label="Link to Profile Page" href="./profile.html" target="_self">
           <svg
             aria-hidden="true"
             class="profile-button"

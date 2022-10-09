@@ -1,25 +1,17 @@
-const showAnswerButton = document.querySelectorAll('[data-js="show-answer-button"]');
-const answer = document.querySelectorAll('[data-js="answer"]');
-const bookmarks = document.querySelectorAll('[data-js="bookmark"]');
+const showAnswerButton = document.querySelector('[data-js="show-answer-button"]');
+const answer = document.querySelector('[data-js="answer"]');
+const bookmark = document.querySelector('[data-js="bookmark"]');
 
-for (let count = 0; count < answer.length; count++) {
-  showAnswerButton.item(count).addEventListener("click", () => {
-    const currentAnswer = answer.item(count);
-    const currentButton = showAnswerButton.item(count);
+showAnswerButton.addEventListener("click", (event) => {
+  answer.classList.toggle("answer--active");
 
-    currentAnswer.classList.toggle("answer--active");
+  if (answer.classList.contains("answer--active")) {
+    event.target.textContent = "Hide Answer";
+  } else {
+    event.target.textContent = "Show Answer";
+  }
+});
 
-    if (currentButton.textContent === "Hide Answer") {
-      currentButton.textContent = "Show Answer";
-    } else {
-      currentButton.textContent = "Hide Answer";
-    }
-  });
-}
-console.log(bookmarks);
-
-for (let count = 0; count < bookmarks.length; count++) {
-  bookmarks.item(count).addEventListener("click", (event) => {
-    bookmarks.item(count).classList.toggle("bookmark--active");
-  });
-}
+bookmark.addEventListener("click", (event) => {
+  bookmark.classList.toggle("bookmark--active");
+});
