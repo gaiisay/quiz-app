@@ -63,19 +63,13 @@ form.addEventListener("submit", (event) => {
   createCard(inputQuestion, inputAnswer, inputTag);
 });
 
-const updateQuestionAmount = (value) => {
-  questionAmountLeft.innerText = value;
+const updateAmount = (target, event) => {
+  target.innerText = maxLength - event.target.value.length;
 };
-const updateAnswerAmount = (value) => {
-  answerAmountLeft.innerText = value;
-};
-
-updateQuestionAmount(maxLength);
-updateAnswerAmount(maxLength);
 
 form.question.addEventListener("input", (event) => {
-  updateQuestionAmount(maxLength - event.target.value.length);
+  updateAmount(questionAmountLeft, maxLength - event.target.value.length);
 });
 form.answer.addEventListener("input", (event) => {
-  updateAnswerAmount(maxLength - event.target.value.length);
+  updateAmount(answerAmountLeft, maxLength - event.target.value.length);
 });
